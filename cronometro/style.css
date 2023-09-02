@@ -10,8 +10,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(17, 17, 17);
+    background: #e0e0e0;
     text-align: center;
+
 }
 
 .contenedor-principal {
@@ -19,17 +20,26 @@ body {
     height: 300px;
     /* max-width: 600px; */
     /* min-height: 350px; */
-    background: #fff;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
 }
 
 
+.contenedor-interno {
+    height: auto;
+    width: 100%;
+}
+
 .botones {
     padding: 10px;
+    display: flex;
+    justify-content: space-around;
 }
 
 #cronometro {
@@ -37,6 +47,8 @@ body {
     padding: 20px 0;
     font-size: 35px;
     user-select: none;
+    color: rgba(255, 0, 0, 0.507);
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.562);
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -47,23 +59,45 @@ body {
     margin: 10px;
     padding: 10px;
     border: none;
-    border-radius: 50%;
+    background: #e0e0e0;
 }
+
+
 
 #btn-inicio-pausa.iniciar,
 #btn-inicio-pausa.iniciar i {
-    background-color: #08e008;
-    
+    border-radius: 20px;
+    color: #504a4a;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
 }
 
-#btn-inicio-pausa.pausa,
-#btn-inicio-pausa.pausa i {
-    background-color: #ffdc00;
-    
-}
 
+
+#btn-inicio-pausa.pausa {
+    color: rgba(255, 0, 0, 0.781);
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.753);
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #bebebe,
+                inset -5px -5px 5px #fff;
+}
 
 #btn-reiniciar {
-    background: red;
     
+    /* color: rgb(2, 255, 2);
+    text-shadow: 0 0 2px rgba(2, 255, 2, 0.651); */
+    color: #504a4a;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+#btn-reiniciar.pausa {
+    color: rgba(255, 0, 0, 0.781);
+    text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.753);
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #bebebe,
+                inset -5px -5px 5px #fff;
 }

@@ -40,7 +40,10 @@ btnInicioPausa.addEventListener('click', function ( ) {
         btnInicioPausa.innerHTML = '<i class="bi bi-pause"></i>';
         btnInicioPausa.classList.remove('iniciar');
         btnInicioPausa.classList.add('pausa');
+        btnReiniciar.classList.remove('pausa')
+
         estadoCronometro = 'activo';
+
     } else {
         window.clearInterval(intervaloDeTiempo);
         btnInicioPausa.innerHTML = '<i class="bi bi-play"></i>';
@@ -59,6 +62,8 @@ btnReiniciar.addEventListener('click', function() {
 
     cronometro.innerText = '00:00:00';
     btnInicioPausa.innerHTML = '<i class="bi bi-play"></i>';
+    
+    btnReiniciar.classList.add('pausa')
     btnInicioPausa.classList.remove('pausa');
     btnInicioPausa.classList.add('iniciar');
 
