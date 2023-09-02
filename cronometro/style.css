@@ -11,45 +11,44 @@ body {
     align-items: center;
     justify-content: center;
     background: #e0e0e0;
-    text-align: center;
-
 }
 
 .contenedor-principal {
     width: 300px;
     height: 300px;
-    /* max-width: 600px; */
-    /* min-height: 350px; */
+    margin: 0 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow:  20px 20px 60px #bebebe,
-                -20px -20px 60px #ffffff;
+    box-shadow:  25px 25px 50px #bebebe,
+                -25px -25px 50px #ffffff;
 }
 
-
 .contenedor-interno {
-    height: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .botones {
     padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+@font-face {
+    src: url(font/DS-DIGI.TTF);
+    font-family: 'DS-DIGI';
 }
 
 #cronometro {
-    width: 100%;
-    padding: 20px 0;
-    font-size: 35px;
+    padding: 20px ;
+    font-size: 60px;
     user-select: none;
     color: rgba(255, 0, 0, 0.507);
     text-shadow: 0px 0px 3px rgba(255, 0, 0, 0.562);
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'DS-DIGI';
 }
 
 .boton {
@@ -62,8 +61,6 @@ body {
     background: #e0e0e0;
 }
 
-
-
 #btn-inicio-pausa.iniciar{
     border-radius: 20px;
     color: #504a4a;
@@ -71,8 +68,6 @@ body {
     box-shadow:  10px 10px 20px #bebebe,
                 -10px -10px 20px #ffffff;
 }
-
-
 
 #btn-inicio-pausa.pausa {
     color: rgba(255, 0, 0, 0.781);
@@ -83,9 +78,6 @@ body {
 }
 
 #btn-reiniciar {
-    
-    /* color: rgb(2, 255, 2);
-    text-shadow: 0 0 2px rgba(2, 255, 2, 0.651); */
     color: #504a4a;
     border-radius: 20px;
     background: #e0e0e0;

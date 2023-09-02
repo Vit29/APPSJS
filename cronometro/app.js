@@ -62,7 +62,6 @@ btnReiniciar.addEventListener('click', function() {
 
     cronometro.innerText = '00:00:00';
     btnInicioPausa.innerHTML = '<i class="bi bi-play"></i>';
-    
     btnReiniciar.classList.add('pausa')
     btnInicioPausa.classList.remove('pausa');
     btnInicioPausa.classList.add('iniciar');
