@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root{
+--dark_blue :#348888; 
+--blue :#22BABB; 
+--white_blue :#9EF8EE; 
+--orange :#FA7F08; 
+--orange_strong:#F24405; 
+--white: #fafafb;
+}
+
+body{
+    background: linear-gradient(45deg,var(--dark_blue),var(--white_blue),var(--dark_blue));
+    height: 100vh;
+}
+
+.container{
+    max-width: 80%;
+    width: 400px;
+    /* height: 80vh; */
+    margin: auto;
+}
+/* PERFIL */
+
+#fecha{
+    color: var(--white);
+    margin: 10px 0;
+}
+
+.perfil h1{
+    color: var(--white);
+    margin: 10px 0;
+}
+.perfil span{
+    color: var(--white);
+    letter-spacing: 1px;   
+}
+
+/* AGREGAR TAREA  */
+
+.agregar-tarea{
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap:50px;
+    margin: 40px 0;
+}
+.agregar-tarea input{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--white);
+    font-size: 1.3rem;
+    color: var(--orange);
+    outline: none;
+    
+
+}
+.agregar-tarea i{
+    font-size: 2rem;
+    color: var(--orange);
+    transition: 200ms;
+}
+
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    font-size: 1.3rem;
+    color: var(--orange);
+    opacity: 50%;
+}
+
+/* seccion tarea */
+.seccion-tarea{
+    color: var(--white);    
+}
+
+.seccion-tarea h3{
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.seccion-tarea li{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    background: linear-gradient(var(--orange_strong), var(--orange));
+    margin: 10px 0;
+}
+
+.seccion-tarea i {
+    font-size: 2rem;
+}
+.seccion-tarea i:hover{
+    color: var(--dark_blue);
+}
+.seccion-tarea > ul p{
+    font-size: 1.5rem;
+}
+.line-through {
+    text-decoration: line-through;
+    color: var(--dark_blue);
+}
+.opacity{
+    opacity: 0.3;
+}

@@ -102,7 +102,7 @@ titulo.innerText = ' mis toppings favoritos'
 
 // CREAR UN ELEMNTO 
 
-// PASO UNO ¿DONDE VAMOS A AGREGAR EL TOPPING NUEVO? HAY QUE REFERENCIAR DONDE
+// PASO UNO ¿DONDE VAMOS A AGREGAR EL TOPPING NUEVO HAY QUE REFERENCIAR DONDE
 const listaToppings = document.getElementById('lista-toppings');
 // CREAMOS EL NUEVO ELEMNTO CON  (document.createElement)
 const toppingNUevo = document.createElement('li');

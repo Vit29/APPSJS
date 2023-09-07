@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@900&family=Nunito&family=Orbitron&family=Poppins:wght@600&family=Rubik&family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+    background-color: bisque;
+}
+
+.contenedor {
+    width: 700px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #404040;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: #7976763d;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    color: #fff;
+    background-color: #1312a8;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#lista-de-tareas {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea {
+    width: 100%;
+    min-height: 70px;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #407ba6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tarea.completada {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+
+.tarea p{
+    max-width: 350px;
+}
+
+i {
+    margin: 15px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar {
+    color: rgb(0, 255, 0);
+}
+
+.icono-eliminar {
+    color: #fff;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover {
+    color: rgb(255, 255, 255, 0.523);
+}

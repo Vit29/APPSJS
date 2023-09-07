@@ -2,6 +2,7 @@ const cronometro = document.getElementById('cronometro');
 const btnInicioPausa = document.getElementById('btn-inicio-pausa');
 const btnReiniciar = document.getElementById('btn-reiniciar');
 
+
 let [horas, minutos, segundos] = [0, 0, 0]
 
 let intervaloDeTiempo;
@@ -10,7 +11,7 @@ let estadoCronometro = 'pausado'
 function actualizarCronometro() {
     segundos++;
 
-    if ( segundos / 60 === 1) {
+    if ( segundos === 60) {
         segundos = 0;
         minutos++;
 
@@ -32,16 +33,13 @@ function asignarFormato(unidadDeTiempo) {
 
 }
 
-
-
-btnInicioPausa.addEventListener('click', function ( ) {
+btnInicioPausa.addEventListener('click', function() {
     if ( estadoCronometro === 'pausado') { 
         intervaloDeTiempo = window.setInterval(actualizarCronometro, 1000);
         btnInicioPausa.innerHTML = '<i class="bi bi-pause"></i>';
         btnInicioPausa.classList.remove('iniciar');
         btnInicioPausa.classList.add('pausa');
         btnReiniciar.classList.remove('pausa')
-
         estadoCronometro = 'activo';
 
     } else {

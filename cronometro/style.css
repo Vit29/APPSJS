@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@900&family=Nunito&family=Orbitron&family=Poppins:wght@600&family=Rubik&family=Ubuntu&display=swap');
 
 * {
     margin: 0;
@@ -23,8 +22,8 @@ body {
     justify-content: center;
     border-radius: 50px;
     background: #e0e0e0;
-    box-shadow:  25px 25px 50px #bebebe,
-                -25px -25px 50px #ffffff;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
 }
 
 .contenedor-interno {
