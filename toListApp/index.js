@@ -8,10 +8,8 @@ const lineThroungh = 'line-through'
 let id 
 let LIST
 
-
 const FECHA = new Date()
 fecha.innerHTML = FECHA.toLocaleDateString('es-MX',{weekday:'long', month:'short', day:'numeric'})
-
 
 // agregando el elemento li
 function addTarea (tarea, id, realizado, eliminado) {
@@ -59,7 +57,8 @@ addBoton.addEventListener('click', () => {
     input.value=''
     id++
 })
-// agregando tarea 
+
+// agregando tarea  por enter
 document.addEventListener('keyup', event => {
     if(event.key =='Enter') {
         const tarea = input.value

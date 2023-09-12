@@ -99,15 +99,9 @@ i {
     cursor: pointer;
 }
 
-.icono-completar {
+.icono-completar:hover {
     color: rgb(0, 255, 0);
 }
-
-.icono-eliminar {
-    color: #fff;
-}
-
-.icono-completar:hover,
 .icono-eliminar:hover {
-    color: rgb(255, 255, 255, 0.523);
+    color: red;
 }
