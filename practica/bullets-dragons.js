@@ -41,3 +41,14 @@ function guerrero(balas,dragones) {
     }
 }
 console.log( guerrero( 10 ,6));
+
+
+
+// function hero(bullets, dragons){
+//     console.log(bullets - (dragons * 2));
+//     console.log(3 < 0); 
+//     //Inverti el valor ternario ?true :false -----> ?false :true
+//     return bullets - dragons * 2 < 0 ? false : true
+//     }
+
+//     console.log(hero(11,6));
