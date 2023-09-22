@@ -23,8 +23,32 @@ for (let i = 0; i < familia.length; i++) {
     listaPush.push([i + 1] + ' ' + familia[i])
 
 }
-console.log(familia);
-console.log(listaNumerada);
-console.log(listaPush);
+// console.log(familia);
+// console.log(listaNumerada);
+// console.log(listaPush);
+const letras = 13516593169831
+
+const foo = letras.toString().split('').map(function( e, i) {
+        return `${i + 1}; ${e}`
+},)
+// console.log(foo);
 
 
+const foo2 = letras.toString().split('').map( (x , i ) => {
+    // console.log(x);
+    // console.log(i);
+    return `${i+1}: ${x}`
+})
+
+// console.log(foo2);
+
+const array = [34,65,76,4,6,34,77,34,53]
+
+total = array.reduce( (suma , numero) => suma += numero ,200)
+
+total
+
+array.map(function( e , i) {
+    console.log(e);
+    console.log(i);
+})
