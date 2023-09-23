@@ -46,14 +46,8 @@ const array = [34,65,76,4,6,34,77,34,53]
 
 total = array.reduce( (suma , numero) => suma += numero ,200)
 
-total
-
-array.map(function( e , i) {
-    console.log(e);
-    console.log(i);
-})
-
 
 function powersOfTwo(n) {
     return [...Array(n + 1)].map((_, i) => 2 ** i)
-  }
+}
+
