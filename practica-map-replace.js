@@ -52,3 +52,8 @@ array.map(function( e , i) {
     console.log(e);
     console.log(i);
 })
+
+
+function powersOfTwo(n) {
+    return [...Array(n + 1)].map((_, i) => 2 ** i)
+  }
