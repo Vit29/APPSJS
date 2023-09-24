@@ -51,3 +51,19 @@ function powersOfTwo(n) {
     return [...Array(n + 1)].map((_, i) => 2 ** i)
 }
 
+const apex = {
+    'a': 'e',
+    'b': 'f',
+    'c': 'g',
+    'd': 'h',
+ }
+ 
+ function userApex (x) {
+     return x.split('').map(function(y) { 
+         console.log(y);
+         console.log(apex[y]);
+         return apex[y]
+     })
+ }
+ console.log(userApex('abcd'));
+
