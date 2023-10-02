@@ -51,13 +51,13 @@
 //     return [...Array(n + 1)].map((_, i) => 2 ** i)
 // }
 
-const array = '5v55s1s4h67AsvYH454'
-const frecuenciaCaracteres = {};
-array.toLocaleLowerCase().split('').forEach(e => {
-if ((e >= 'a' &&  e <= 'z') || (e >= '0' && e <= '9')) {
-    frecuenciaCaracteres[e] = (frecuenciaCaracteres[e] || 0) + 1;
-} 
-console.log(frecuenciaCaracteres);
+// const array = '5v55s1s4h67AsvYH454'
+// const frecuenciaCaracteres = {};
+// array.toLocaleLowerCase().split('').forEach(e => {
+// if ((e >= 'a' &&  e <= 'z') || (e >= '0' && e <= '9')) {
+//     frecuenciaCaracteres[e] = (frecuenciaCaracteres[e] || 0) + 1;
+// } 
+// console.log(frecuenciaCaracteres);
 
 // let contador = 0
 // for (const key in frecuenciaCaracteres) {
@@ -66,4 +66,19 @@ console.log(frecuenciaCaracteres);
 //         contador++
 //     } 
 // }
-});
+// });
+
+function towerBuilder(nFloors) {
+    let space , star ,tower = [];
+    for (i = 1 ;i <= nFloors; i++) {
+        space = ' '.repeat(nFloors - i)
+        star = '*'.repeat(2 * i - 1)
+        tower.push(`${space}${star}${space}`)
+    }
+    return tower
+}
+
+console.log(towerBuilder(10));
+
+// expected        [ ' * ', ' *** ' ] 
+// to deeply equal [ ' * ', '***' ]
