@@ -80,5 +80,5 @@ function towerBuilder(nFloors) {
 
 console.log(towerBuilder(10));
 
-// expected        [ ' * ', ' *** ' ] 
+// expected        [ ' * ', ' *** ' ]
 // to deeply equal [ ' * ', '***' ]
